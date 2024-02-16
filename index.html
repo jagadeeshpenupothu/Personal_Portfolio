@@ -5,27 +5,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Jagadeesh_P</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets\profile_pic_circle.png">
   </head>
 
   <body>
 
-    
-
-    <nav id="desktop-navdesktop-nav">
-      <div class="logo"><b>Jagadeesh</b>_P</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Experience</a></li>
-          <li><a href="#contact">Projects</a></li>
-          <li><a href="#experience">Blogs</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar">
+      <nav id="desktop-navdesktop-nav">
+        <div class="logo"><a href="#profile"><b>Jagadeesh</b>_P</a></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">About</a></li>
+            <li><a href="#contact">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Certifications</a></li>
+            <li><a href="#experience">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <nav id="hamburger-nav">
       <div class="logo">John Doe</div>
@@ -35,16 +37,14 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <!-- <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Resume</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Projets</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Blogs</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </div> -->
       </div>
-      
     </nav>
 
     <section id="profile">
@@ -52,31 +52,53 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Jagadeesh Penupothu</h1>
         <p class="section__text__p2">Frontend Developer</p>
+        <p class="objective">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Impedit omnis expedita cum corporis nostrum autem repellendus,
+            ab soluta architecto maxime ab soluta architecto maxime lauda ab soluta architecto maxime lauda laudantium iusto eius ipsum reiciendis, quaerat quos! Totam, aperiam inventore!</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/Jagadeesh_Resume.pdf')"
           >
-            View Resume
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('https://www.linkedin.com/in/jagadeeshpenupothu/')">
+            LinkedIn
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('https://github.com/jagadeeshpen')">
+            Github
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div class="details-container">
           <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            src="./assets/experience.png"
+            alt="Experience icon"
             class="icon"
-            onclick="window.open('https://www.linkedin.com/in/jagadeeshpenupothu/')"
           />
-          
+          <h3>Experience</h3>
+          <div class="hr_line"><hr/> </div>
+          <div class="experience">
+            <h3>PW skills </h3>
+            <h5>Feb-2014 to present</h5>
+          </div>
+        </div>
+
+        <div class="details-container">
           <img
-            src="./assets/github.png"
-            alt="My Github profile"
+            src="./assets/experience.png"
+            alt="Experience icon"
             class="icon"
-            onclick="window.open('https://github.com/jagadeeshpen', '_blank')"
           />
+          <h3>Skills</h3>
+          <div class="hr_line"><hr/> </div>
+          <div class="skills">
+            <h3>Web Development -  HTML | CSS | Java Script | React.Js | Tailwind CSS | Node.JS | MongoDB | Express.JS</h3>
+            <h3>BlockChain Development -  Solidity | Hardhat | Foundry | Ethers.Js | DEFI | NFT | DAO | Express.JS</h3>
+            <h3>UI/UX Development -  HTML | CSS | Java Script | React.Js | Tailwind CSS | Node.JS | MongoDB | Express.JS</h3>
+          </div>
         </div>
     </section>
 
@@ -94,6 +116,30 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -342,7 +388,23 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:jagadeeshpenupothu@gmail.com">jagadeeshpenupothu@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jagadeeshpenupothu@gmail.com">jagadeeshpenupothu@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jagadeeshpenupothu@gmail.com">jagadeeshpenupothu@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img

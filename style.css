@@ -210,6 +210,10 @@ section {
   gap: 1rem;
 }
 
+.objective {
+  width: 120vh;
+}
+
 /* ICONS */
 
 .icon {
@@ -223,6 +227,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 4vh;
 }
 
 .btn {
@@ -250,11 +255,14 @@ section {
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(53, 53, 53);
+  color: white;
 }
 
-.btn-color-2 {
+.btn-color-2,
+.btn-color-1{
   background: none;
+  color: black;
 }
 
 .btn-color-2:hover {
@@ -305,6 +313,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  margin-top: 2vh;
 }
 
 .section-container {
@@ -433,4 +442,46 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+
+.details-container_skills{
+  
+}
+
+.skills_gap{
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+}
+
+.experience{
+  justify-content: space-between;
+  margin-top: 2vh;
+  margin-left: 4vh;
+}
+
+.experience h3{  
+  text-align: left;
+}
+
+.experience h5{
+  text-align: right;
+}
+
+.hr_line{
+  margin-top: 2vh;
+}
+
+.navbar{
+  margin-bottom: 3vh;
+}
+
+.skills{
+  margin-top: 2vh ;
+}
+
+.skills h3{
+  text-align: left;
 }
